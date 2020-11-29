@@ -51,7 +51,7 @@ export default class App extends React.Component {
           <View style={styles.container}>
 
           <Text style={styles.displayText}>{
-            hasCameraPermissions===true ? this.state.scannedData: "Request Camera Permission"
+            hasCameraPermissions===true ? this.state.scannedData: "Camera Permission Required"
           }</Text>     
 
           <TouchableOpacity
@@ -73,10 +73,9 @@ export default class App extends React.Component {
     },
     displayText:{
       fontSize: 15,
-      textDecorationLine: 'underline'
     },
     scanButton:{
-      backgroundColor: '#2196F3',
+      backgroundColor: '#0EFC7D',
       padding: 10,
       margin: 10
     },
